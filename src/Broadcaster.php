@@ -85,4 +85,12 @@ class Broadcaster implements BaseBroadcaster
 	{
 		// SNS is for server-to-server communication, so there is no need to validate authenticate.
 	}
+
+	/**
+	 * @param array $config
+	 */
+	public function createSnsDriver($config = [])
+	{
+
+	}
 }

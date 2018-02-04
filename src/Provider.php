@@ -41,7 +41,10 @@ class Provider extends ServiceProvider
 			return new SNS($app[SnsClient::class], $router);
 		});
 
-		$this->app[\Illuminate\Contracts\Broadcasting\Factory::class]->extend('sns', function ($app, $config) {
+		$this->app[BroadcastManager::class]->extend('sns', function ($app, $config) {
+			var_dump('config', $config['broadcasting']);
+			echo "<br/>\n<br/>\n";
+
 			return new Broadcaster($app[SNS::class]);
 		});
 

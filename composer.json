@@ -30,10 +30,9 @@
   "require": {
     "aws/aws-php-sns-message-validator": "^1.2",
     "aws/aws-sdk-php": "~3.0",
-    "illuminate/broadcasting": "^5.3",
-    "illuminate/console": "^5.3",
-    "illuminate/notifications": "^5.3",
-    "illuminate/routing": "^5.3",
-    "illuminate/support": "^5.3"
+    "illuminate/broadcasting": "5.2.*",
+    "illuminate/console": "5.2.*",
+    "illuminate/routing": "5.2.*",
+    "illuminate/support": "5.2.*"
   }
 }
